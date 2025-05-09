@@ -3,7 +3,7 @@ from pathlib import Path
 def get_config():
     return {
         "batch_size": 8,
-        "num_epochs": 0,
+        "num_epochs": 40,
         "lr": 10**-4,
         "seq_len": 512,
         "d_model": 512,
@@ -14,7 +14,8 @@ def get_config():
         "model_basename": "tmodel_",
         "preload": "latest",
         "tokenizer_file": "tokenizer_{0}.json",
-        "experiment_name": "runs/tmodel"
+        "experiment_name": "runs/tmodel",
+        "model_filename" : "opus_books_weights/tmodel_29.pt"
     }
 
 def get_weights_file_path(config, epoch: str):
