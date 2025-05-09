@@ -1,4 +1,4 @@
 src/__pycache__
-src/opus_books_weights
+src/opus_books_weights/*.pt
 venv
 !src/opus_books_weights/tmodel_29.pt
